@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/light_yellow"
+    tools:context="com.garbergames.messageme.activityClasses.MessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/edittext_message"
+            android:textColorHint="@color/light_white"
+            android:textColor="@color/light_white"
+            android:hint="@string/enter_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/button_send"
+            android:background="@color/dark_yellow"
+            android:textColor="@color/light_white"
+            android:text="@string/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:text="@string/refresh"
+        android:background="@color/dark_yellow"
+        android:textColor="@color/light_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <ListView
+        android:id="@+id/listview_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/light_red"
+    tools:context="com.garbergames.messageme.activityClasses.ForgotAccountActivity">
+
+    <TextView
+        android:textColor="@color/light_white"
+        android:text="@string/forgot"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textColorHint="@color/dark_white"
+        android:textColor="@color/dark_white"
+        android:textSize="20sp"
+        android:id="@+id/edittext_enter_prompts"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:background="@color/dark_red"
+        android:textSize="25sp"
+        android:textColor="@color/light_white"
+        android:text="@string/retrieve"
+        android:id="@+id/button_get_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

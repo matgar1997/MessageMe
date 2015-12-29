@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/light_green"
+    tools:context="com.garbergames.messageme.activityClasses.MainMenuActivity">
+
+    <TextView
+        android:text="@string/app_name"
+        android:textColor="@color/light_white"
+        android:textSize="35sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_my_messages"
+        android:textColor="@color/light_white"
+        android:background="@color/dark_green"
+        android:text="@string/my_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_people"
+        android:textColor="@color/light_white"
+        android:background="@color/dark_green"
+        android:text="@string/people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/button_signout"
+        android:background="@color/dark_green"
+        android:textColor="@color/light_white"
+        android:text="@string/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

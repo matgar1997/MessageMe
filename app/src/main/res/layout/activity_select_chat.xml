@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    tools:context="com.garbergames.messageme.activityClasses.SelectChatActivity">
+
+    <TextView
+        android:id="@+id/textview_conversation"
+        android:text="@string/enter_convo"
+        android:textColor="@color/dark_black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="@dimen/activity_vertical_margin"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <ListView
+        android:id="@+id/listview_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

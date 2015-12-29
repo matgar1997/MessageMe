@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.garbergames.messageme" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission android:protectionLevel="signature"
+        android:name="com.garbergames.messageme.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activityClasses.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityClasses.CreateAccountActivity"
+            android:label="@string/title_activity_create_account" >
+        </activity>
+        <activity
+            android:name=".activityClasses.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name=".activityClasses.UserActivity"
+            android:label="@string/title_activity_user" >
+        </activity>
+        <activity
+            android:name=".activityClasses.MainMenuActivity"
+            android:label="@string/title_activity_main_menu" >
+        </activity>
+        <activity
+            android:name=".activityClasses.SelectUserActivity"
+            android:label="@string/title_activity_select_user" >
+        </activity>
+        <activity
+            android:name=".activityClasses.ForgotAccountActivity"
+            android:label="@string/title_activity_forgot_account" >
+        </activity>
+        <activity
+            android:name=".activityClasses.SelectChatActivity"
+            android:label="@string/title_activity_select_chat" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!--
+                  IMPORTANT: Change "com.parse.starter" to match your app's package name.
+                -->
+                <category android:name="com.garbergames.messageme" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/light_blue"
+    tools:context="com.garbergames.messageme.activityClasses.CreateAccountActivity">
+
+    <TextView
+        android:text="@string/create"
+        android:layout_gravity="center"
+        android:textColor="@color/light_white"
+        android:textSize="35sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/activity_vertical_margin" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:textSize="20sp"
+        android:textColorHint="@color/dark_white"
+        android:textColor="@color/dark_white"
+        android:hint="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:textSize="20sp"
+        android:textColorHint="@color/dark_white"
+        android:textColor="@color/dark_white"
+        android:hint="@string/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:textSize="20sp"
+        android:textColorHint="@color/dark_white"
+        android:textColor="@color/dark_white"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edittext_password"
+        android:textSize="20sp"
+        android:textColorHint="@color/dark_white"
+        android:textColor="@color/dark_white"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="@dimen/activity_horizontal_margin"
+        android:layout_height="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/button_create_account"
+        android:textSize="25sp"
+        android:background="@color/dark_blue"
+        android:textColor="@color/light_white"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:text="@string/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
